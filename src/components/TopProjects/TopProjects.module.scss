@@ -1,0 +1,35 @@
+.TopProjects {
+  margin-bottom: 2rem;
+}
+
+.TopProjectsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  a {
+    color: var(--grayLight-100);
+    transition: color 125ms ease-out;
+    &:hover,
+    &:focus-visible {
+      color: var(--white-400);
+    }
+  }
+}
+
+.TopProjectsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  justify-items: center;
+  gap: 1rem;
+
+  & > * {
+    transition: color 80ms ease-out;
+    &:hover {
+      h4 {
+        color: var(--grape-400);
+      }
+    }
+  }
+}

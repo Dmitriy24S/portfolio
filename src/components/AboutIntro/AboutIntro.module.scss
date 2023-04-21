@@ -1,0 +1,117 @@
+.container {
+  margin-bottom: 2rem;
+  @media (min-width: 700px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+.name {
+  background: -webkit-linear-gradient(47deg, #024eff, #ff009d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.githubLink {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.5rem;
+  color: var(--grape-400);
+  transition: color 75ms ease-out;
+  &:hover,
+  &:focus-visible {
+    color: var(--grape-200);
+  }
+}
+
+.nameOuter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--grayDark-500);
+  padding: 2px;
+  border-radius: 0.5rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  @media (min-width: 700px) {
+    margin: 0;
+  }
+  // shine border effect
+  @media screen and (prefers-reduced-motion: no-preference) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      z-index: 1;
+      height: 125%;
+      border-radius: 0.5rem;
+      background: linear-gradient(
+        to right,
+        #343434,
+        #5b5b5b,
+        #969696,
+        #5b5b5b,
+        #3c3c3c
+      ); /* Set the gradient colors */
+      transform: rotate(20deg); /* Rotate the gradient */
+      animation: shine 5.5s linear infinite; /* Animate the shine effect */
+    }
+  }
+}
+
+.nameInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  background-color: var(--grayDark-600);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  // border: 2px solid transparent; /* Set initial border to transparent */
+  @media (prefers-reduced-motion: reduce) {
+    // border: 1px solid var(--grayDark-200);
+  }
+}
+
+.details {
+  max-width: 50ch;
+  margin: 0 auto;
+  margin-top: 1rem;
+  @media (min-width: 700px) {
+    max-width: 20rem;
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: rotate(20deg) translate(-200%, -200%); /* Move the gradient off-screen */
+    opacity: 0; /* Make the gradient transparent */
+  }
+  50% {
+    opacity: 1; /* Make the gradient visible */
+  }
+  100% {
+    transform: rotate(20deg) translate(200%, 200%); /* Move the gradient off-screen */
+    opacity: 0; /* Make the gradient transparent */
+  }
+}

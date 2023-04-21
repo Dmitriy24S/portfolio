@@ -1,0 +1,57 @@
+header {
+  position: fixed;
+  padding: 0.7rem 2rem;
+  background-color: var(--grayDark-600);
+  border-bottom: 1px solid var(--grayDark-400);
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.headerContent {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homeLink {
+  display: flex;
+  color: var(--white-200);
+  transition: color 125ms ease-out;
+  &:hover,
+  &:focus-visible {
+    color: var(--white-400);
+  }
+  svg {
+    font-size: 1.4rem;
+  }
+}
+
+.links {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  & > * {
+    color: var(--grayLight-100);
+    transition: color 125ms ease-out;
+    &:hover,
+    &:focus-visible {
+      color: var(--white-400);
+    }
+  }
+}
+
+.downloadButton {
+  padding: 0.1rem 0.2rem;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}

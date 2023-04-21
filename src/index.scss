@@ -1,0 +1,141 @@
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  --scrollbarBG: rgb(23, 20, 33);
+  --scrollbarThumb: rgb(54, 51, 60);
+
+  --grape-100: hsl(275, 93%, 68%);
+  --grape-200: hsl(285, 97%, 59%);
+  --grape-300: hsl(285, 100%, 59%);
+  --grape-400: hsl(285, 94%, 51%);
+  --grape-500: hsl(285, 88%, 48%);
+
+  --white-100: hsla(0, 0%, 100%, 0.87);
+  --white-200: hsla(0, 0%, 100%, 0.797);
+  --white-300: hsl(0, 0%, 95%);
+  --white-400: hsl(0, 0%, 90%);
+
+  --grayLight-100: hsl(0, 0%, 73%); /* project sicrption gryas hz blegh */
+  --grayLight-200: hsl(0, 0%, 55%); /* skills MUI () etc, telefone +372 */
+  --grayLight-300: hsla(0, 0%, 100%, 0.422);
+
+  --grayDark-100: hsl(0, 0%, 30%);
+  --grayDark-200: hsl(0, 0%, 24%);
+  --grayDark-300: hsl(0, 1%, 21%);
+  --grayDark-400: hsl(0, 0%, 16%);
+  --grayDark-500: hsl(0, 0%, 13%);
+  --grayDark-600: hsl(0, 0%, 9%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  /* color-scheme: light dark; */
+  color: rgba(255, 255, 255, 0.87);
+  // background-color: hsl(0, 0%, 6%);
+  background-color: hsl(0, 0%, 6%);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  /* text-align: center; */
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #0f0f0f 20%,
+      #0f0f0f 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #0f0f0f 20%,
+        #0f0f0f 80%,
+        transparent 80%,
+        transparent
+      )
+      15px 15px,
+    linear-gradient(#1b1b1c 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px,
+    linear-gradient(90deg, #202020 1.2000000000000002px, #0f0f0f 1.2000000000000002px) -0.6000000000000001px
+      0;
+  background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+/* Custom text select */
+::-moz-selection {
+  background: #b121e1;
+  color: var(--white-100);
+  -webkit-text-fill-color: var(--white-100);
+}
+::selection {
+  background: #b121e1;
+  color: var(--white-100);
+  -webkit-text-fill-color: var(--white-100);
+}
+
+/* Custom scrollbar */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+  border: 1px solid rgb(45, 44, 44);
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbarThumb);
+  border-radius: 8px;
+  border: 1px solid rgb(68, 68, 68);
+}

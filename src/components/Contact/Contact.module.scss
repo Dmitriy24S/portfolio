@@ -1,0 +1,70 @@
+.contact {
+  h2 {
+    margin-bottom: 1rem;
+    // scroll-margin-top: 4rem;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    margin: 0.5rem 0;
+    letter-spacing: 0.4px;
+
+    span {
+      color: var(--grayLight-200);
+    }
+  }
+}
+
+.card {
+  padding: 2rem;
+  background-color: var(--grayDark-600);
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+  max-width: 375px;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grayDark-500);
+}
+
+.buttonContainer {
+  position: relative;
+
+  button {
+    background-color: transparent;
+    color: var(--grayLight-300);
+    padding: 0.2rem;
+    display: flex;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+
+    polyline {
+      stroke: var(--white-100);
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--grayLight-100);
+    }
+    // Show tooltip:
+    &:hover ~ div,
+    &:focus-visible ~ div {
+      opacity: 1;
+      visibility: visible;
+      // TODO: refactor?
+    }
+  }
+}
+
+.label {
+  min-width: 9ch;
+  color: var(--grape-300);
+}
+// main text
+.label ~ div {
+  color: var(--white-100);
+}

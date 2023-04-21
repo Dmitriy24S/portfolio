@@ -1,0 +1,12 @@
+.container {
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0 auto;
+}
