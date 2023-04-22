@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 
 import Navbar from './components/Navbar/Navbar'
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton'
@@ -24,12 +24,14 @@ function App() {
 
   return (
     <div className='App'>
-      <BrowserRouter>
+      <BrowserRouter basename='/portfolio'>
+        {/* <HashRouter> */}
         <Navbar />
         <ScrollToTopButton />
         <Routes>
           <Route path='/' element={<HomePage />} />
         </Routes>
+        {/* </HashRouter> */}
       </BrowserRouter>
     </div>
   )
