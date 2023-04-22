@@ -25,13 +25,12 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter basename='/portfolio'>
-        {/* <HashRouter> */}
         <Navbar />
         <ScrollToTopButton />
         <Routes>
-          <Route path='/' element={<HomePage />} />
+          {/* <Route path='/' element={<HomePage />} /> */}
+          <Route path='' element={<HomePage />} />
         </Routes>
-        {/* </HashRouter> */}
       </BrowserRouter>
     </div>
   )
