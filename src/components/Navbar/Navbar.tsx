@@ -8,7 +8,7 @@ const Navbar = () => (
     <div className={styles.headerContent}>
       {/* HOME */}
       <Link
-        to='/'
+        to='/portfolio'
         className={styles.homeLink}
         onClick={() => {
           window.scrollTo(0, 0)
