@@ -23,13 +23,4 @@
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   justify-items: center;
   gap: 1rem;
-
-  & > * {
-    transition: color 80ms ease-out;
-    &:hover {
-      h4 {
-        color: var(--grape-400);
-      }
-    }
-  }
 }
