@@ -20,6 +20,9 @@ function App() {
 
   useEffect(() => {
     // fetchGithubInfo()
+    // const data = fetch('https://api.github.com/repos/Dmitriy24S/REPO')
+    //   .then((res) => res.json())
+    //   .then((data) => console.log(data))
   }, [])
 
   return (

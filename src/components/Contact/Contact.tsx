@@ -43,15 +43,18 @@ const Contact = () => {
             <Label>Name:</Label> <div> Dmitri Sirjajev </div>
           </li>
           <li>
-            <Label>Email:</Label> <div> DmitriSirjajev@gmail.com </div>
-            <div className={styles.buttonContainer}>
-              <button
-                aria-label='copy email'
-                onClick={() => handleCopyContactInfo('DmitriSirjajev@gmail.com')}
-              >
-                {!isCopied ? <AiOutlineCopy /> : <GrFormCheckmark />}
-              </button>
-              <Tooltip title={!isCopied ? 'Copy Email' : 'Copied'} active={isCopied} />
+            <Label>Email:</Label>
+            <div className={styles.emailContainer}>
+              DmitriSirjajev@gmail.com
+              <div className={styles.buttonContainer}>
+                <button
+                  aria-label='copy email'
+                  onClick={() => handleCopyContactInfo('DmitriSirjajev@gmail.com')}
+                >
+                  {!isCopied ? <AiOutlineCopy /> : <GrFormCheckmark />}
+                </button>
+                <Tooltip title={!isCopied ? 'Copy Email' : 'Copied'} active={isCopied} />
+              </div>
             </div>
           </li>
           <li>

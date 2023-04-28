@@ -1,5 +1,6 @@
 .scrollButton {
   position: fixed;
+  z-index: 40;
   bottom: 3rem;
   right: 0.5rem;
   display: flex;
@@ -13,7 +14,7 @@
   background: var(--grayDark-100);
   border-radius: 8px;
   cursor: pointer;
-  animation: fade 60ms ease-out;
+  animation: fade 125ms ease-out;
   transition: background-color 125ms ease-out, opacity 125ms ease-out;
   &:hover {
     opacity: 0.8;
@@ -31,5 +32,17 @@
   }
   to {
     opacity: 0.6;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 125ms ease-out;
+  @keyframes fadeOut {
+    from {
+      opacity: 0.6;
+    }
+    to {
+      opacity: 0;
+    }
   }
 }

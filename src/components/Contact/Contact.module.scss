@@ -10,10 +10,16 @@
 
   li {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     gap: 0.2rem;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     letter-spacing: 0.4px;
+    @media (min-width: 500px) {
+      flex-direction: row;
+      align-items: center;
+      margin: 0.5rem 0;
+    }
 
     span {
       color: var(--grayLight-200);
@@ -67,4 +73,8 @@
 // main text
 .label ~ div {
   color: var(--white-100);
+}
+
+.emailContainer {
+  display: flex;
 }

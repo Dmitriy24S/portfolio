@@ -23,7 +23,7 @@ const AboutIntro = () => {
       {/* Details */}
       <div className={styles.details}>
         <p>
-          Frontend development specialist, who strives to provide the best possible user
+          Front end development specialist, who strives to provide the best possible user
           experience in the applications they build, regardless of browser or screen size.
         </p>
         <p>
