@@ -2,7 +2,9 @@ import { useEffect } from 'react'
 import { BrowserRouter, HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 import Navbar from './components/Navbar/Navbar'
+import ScrollToTop from './components/ScrollToTop'
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton'
+import AllProjectsPage from './pages/AllProjectsPage'
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -29,10 +31,12 @@ function App() {
     <div className='App'>
       <BrowserRouter>
         <Navbar />
+        <ScrollToTop />
         <ScrollToTopButton />
         <Routes>
           <Route path='/' element={<Navigate to='/portfolio' />} />
           <Route path='/portfolio' element={<HomePage />} />
+          <Route path='/portfolio/projects' element={<AllProjectsPage />} />
         </Routes>
       </BrowserRouter>
     </div>

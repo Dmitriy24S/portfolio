@@ -27,7 +27,8 @@ const ScrollToTopButton = () => {
         setHideButton(true)
         timer = setTimeout(() => {
           setShowScrollButton(false)
-        }, 125) // after css fadeOut 125ms animation hide button
+          // }, 125) // after css fadeOut 125ms animation hide button // ! flash in out fadeout?
+        }, 115)
       }
     }, 100)
 

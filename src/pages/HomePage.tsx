@@ -1,6 +1,3 @@
-import { useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
 import AboutDetails from '../components/AboutDetails/AboutDetails'
 import AboutIntro from '../components/AboutIntro/AboutIntro'
 import Contact from '../components/Contact/Contact'
