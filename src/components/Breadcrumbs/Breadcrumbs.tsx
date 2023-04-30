@@ -19,6 +19,7 @@ const Breadcrumbs: React.FC<IProps> = ({ links }) => {
         <NavLink
           key={link.label}
           to={link.to}
+          end
           className={({ isActive }) => (isActive ? styles.active : styles.link)}
         >
           {link.label}

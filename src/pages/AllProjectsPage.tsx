@@ -10,7 +10,7 @@ const AllProjectsPage = () => {
 
   const links = [
     {
-      to: '/',
+      to: '/portfolio',
       label: 'Home',
     },
     {

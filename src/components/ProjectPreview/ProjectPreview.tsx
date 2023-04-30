@@ -28,28 +28,27 @@ const ProjectPreview = ({ repo }: IProps) => {
         {/* project links */}
         <div className={styles.links}>
           {repo.homepage && (
-            <div className={styles.eyeIcon}>
+            // <div className={styles.eyeIcon}>
+            //   {/* <a href={repo.homepage} title={`${projectName} Demo Page`} target='_blank'>
+            //     <AiOutlineEye />
+            //   </a>
+            //   <Tooltip title='Demo Page' /> */}
+            // {/* </div> */}
+            <Tooltip title='Demo Page'>
               <a href={repo.homepage} title={`${projectName} Demo Page`} target='_blank'>
                 <AiOutlineEye />
               </a>
-              <Tooltip title='Demo Page' />
-              {/* <Tooltip2 title='Demo Page'>
+            </Tooltip>
+          )}
+          <Tooltip title='Github Repo Page '>
             <a
-                  href={repo.homepage}
-                  title={`${projectName} Demo Page`}
+              href={repo.svn_url}
+              title={`${projectName} Github Repo Page`}
               target='_blank'
             >
-  <AiOutlineEye />
-                </a>
-              </Tooltip2> */}
-            </div>
-          )}
-          <div className={styles.webIcon}>
-            <a href={repo.svn_url} title={`${projectName} Github Page`} target='_blank'>
               <AiFillGithub />
             </a>
-            <Tooltip title='Github Repo Page' />
-          </div>
+          </Tooltip>
         </div>
       </div>
       {/* description */}

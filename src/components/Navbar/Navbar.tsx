@@ -17,6 +17,7 @@ const Navbar = () => {
       <div className={styles.headerContent}>
         {/* HOME */}
         <Link
+          // to='/'
           to='/portfolio'
           className={styles.homeLink}
           onClick={() => {
@@ -29,7 +30,7 @@ const Navbar = () => {
         {/* NAV LINKS */}
         <div className={styles.links}>
           <a
-            href='CV-Dmitri-Sirjajev.pdf'
+            href='/portfolio/CV-Dmitri-Sirjajev.pdf'
             target='_blank'
             className={styles.downloadButton}
           >

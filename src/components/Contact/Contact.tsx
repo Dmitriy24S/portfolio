@@ -47,13 +47,14 @@ const Contact = () => {
             <div className={styles.emailContainer}>
               DmitriSirjajev@gmail.com
               <div className={styles.buttonContainer}>
-                <button
-                  aria-label='copy email'
-                  onClick={() => handleCopyContactInfo('DmitriSirjajev@gmail.com')}
-                >
-                  {!isCopied ? <AiOutlineCopy /> : <GrFormCheckmark />}
-                </button>
-                <Tooltip title={!isCopied ? 'Copy Email' : 'Copied'} active={isCopied} />
+                <Tooltip title={!isCopied ? 'Copy Email' : 'Copied'} active={isCopied}>
+                  <button
+                    aria-label='copy email'
+                    onClick={() => handleCopyContactInfo('DmitriSirjajev@gmail.com')}
+                  >
+                    {!isCopied ? <AiOutlineCopy /> : <GrFormCheckmark />}
+                  </button>
+                </Tooltip>
               </div>
             </div>
           </li>
