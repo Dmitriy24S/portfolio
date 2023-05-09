@@ -16,12 +16,19 @@ const TopProjects = () => {
           Projects
         </h2>
         {/* <Link to='https://github.com/Dmitriy24S' target='_blank'> */}
-        <Link to='/portfolio/projects'>View All Projects</Link>
+        <Link to='/portfolio/projects' className={styles.projectsLink}>
+          View All Projects
+        </Link>
       </div>
       <div className={styles.TopProjectsContainer}>
         {reposData.map((repo) => (
           <ProjectPreview repo={repo} key={repo.name} />
         ))}
+      </div>
+      <div className={styles.TopProjectsFooter}>
+        <Link to='/portfolio/projects' className={styles.projectsLink}>
+          View All Projects
+        </Link>
       </div>
     </section>
   )

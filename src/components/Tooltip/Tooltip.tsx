@@ -28,7 +28,12 @@ export const Tooltip = ({ children, title, active }: IProps) => {
   }, [active])
 
   return (
-    <div onFocus={handleFocus} onBlur={handleBlur} className={styles.container}>
+    <div
+      onFocus={handleFocus}
+      onBlur={handleBlur}
+      onMouseLeave={handleBlur}
+      className={styles.container}
+    >
       <div
         className={[styles.tooltip, (showTooltip || active) && styles.active].join(' ')}
       >

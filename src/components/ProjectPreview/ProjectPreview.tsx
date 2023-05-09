@@ -42,7 +42,7 @@ const ProjectPreview = ({ repo }: IProps) => {
           )}
           <Tooltip title='Github Repo Page '>
             <a
-              href={repo.svn_url}
+              href={repo.html_url}
               title={`${projectName} Github Repo Page`}
               target='_blank'
             >

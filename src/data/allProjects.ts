@@ -2,136 +2,16 @@ export type ProjectType = (typeof allProjects)[0]
 
 export const allProjects = [
   {
-    id: 597432265,
-    node_id: 'R_kgDOI5wXyQ',
-    name: 'comments-system-backend',
-    full_name: 'Dmitriy24S/comments-system-backend',
-    private: false,
-    owner: {
-      login: 'Dmitriy24S',
-      id: 77013378,
-      node_id: 'MDQ6VXNlcjc3MDEzMzc4',
-      avatar_url: 'https://avatars.githubusercontent.com/u/77013378?v=4',
-      gravatar_id: '',
-      url: 'https://api.github.com/users/Dmitriy24S',
-      html_url: 'https://github.com/Dmitriy24S',
-      followers_url: 'https://api.github.com/users/Dmitriy24S/followers',
-      following_url: 'https://api.github.com/users/Dmitriy24S/following{/other_user}',
-      gists_url: 'https://api.github.com/users/Dmitriy24S/gists{/gist_id}',
-      starred_url: 'https://api.github.com/users/Dmitriy24S/starred{/owner}{/repo}',
-      subscriptions_url: 'https://api.github.com/users/Dmitriy24S/subscriptions',
-      organizations_url: 'https://api.github.com/users/Dmitriy24S/orgs',
-      repos_url: 'https://api.github.com/users/Dmitriy24S/repos',
-      events_url: 'https://api.github.com/users/Dmitriy24S/events{/privacy}',
-      received_events_url: 'https://api.github.com/users/Dmitriy24S/received_events',
-      type: 'User',
-      site_admin: false,
-    },
-    html_url: 'https://github.com/Dmitriy24S/comments-system-backend',
+    name: 'travel-booking-app',
+    // url: 'https://github.com/Dmitriy24S/travel-booking-app',
+    html_url: 'https://github.com/Dmitriy24S/travel-booking-app',
+    // nameWithOwner: 'Dmitriy24S/travel-booking-app',
+    full_name: 'Dmitriy24S/travel-booking-app',
+    // homepageUrl: 'https://travel-booking-app-tau.vercel.app',
+    homepage: 'https://travel-booking-app-tau.vercel.app',
     description:
-      'Comments System - Backend. Created with Fastify, prisma, postgresql, dotenv, nodemon & Railway,',
-    fork: false,
-    url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend',
-    forks_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/forks',
-    keys_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/keys{/key_id}',
-    collaborators_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/collaborators{/collaborator}',
-    teams_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/teams',
-    hooks_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/hooks',
-    issue_events_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/issues/events{/number}',
-    events_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/events',
-    assignees_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/assignees{/user}',
-    branches_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/branches{/branch}',
-    tags_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/tags',
-    blobs_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/git/blobs{/sha}',
-    git_tags_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/git/tags{/sha}',
-    git_refs_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/git/refs{/sha}',
-    trees_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/git/trees{/sha}',
-    statuses_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/statuses/{sha}',
-    languages_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/languages',
-    stargazers_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/stargazers',
-    contributors_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/contributors',
-    subscribers_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/subscribers',
-    subscription_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/subscription',
-    commits_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/commits{/sha}',
-    git_commits_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/git/commits{/sha}',
-    comments_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/comments{/number}',
-    issue_comment_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/issues/comments{/number}',
-    contents_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/contents/{+path}',
-    compare_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/compare/{base}...{head}',
-    merges_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/merges',
-    archive_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/{archive_format}{/ref}',
-    downloads_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/downloads',
-    issues_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/issues{/number}',
-    pulls_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/pulls{/number}',
-    milestones_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/milestones{/number}',
-    notifications_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/notifications{?since,all,participating}',
-    labels_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/labels{/name}',
-    releases_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/releases{/id}',
-    deployments_url:
-      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/deployments',
-    created_at: '2023-02-04T14:35:12Z',
-    updated_at: '2023-04-22T07:41:43Z',
-    pushed_at: '2023-04-24T04:30:59Z',
-    git_url: 'git://github.com/Dmitriy24S/comments-system-backend.git',
-    ssh_url: 'git@github.com:Dmitriy24S/comments-system-backend.git',
-    clone_url: 'https://github.com/Dmitriy24S/comments-system-backend.git',
-    svn_url: 'https://github.com/Dmitriy24S/comments-system-backend',
-    homepage: 'https://comments-system-six.vercel.app',
-    size: 522,
-    stargazers_count: 0,
-    watchers_count: 0,
-    language: 'JavaScript',
-    has_issues: true,
-    has_projects: true,
-    has_downloads: true,
-    has_wiki: true,
-    has_pages: false,
-    has_discussions: false,
-    forks_count: 0,
-    mirror_url: null,
-    archived: false,
-    disabled: false,
-    open_issues_count: 0,
-    license: null,
-    allow_forking: true,
-    is_template: false,
-    web_commit_signoff_required: false,
-    topics: [],
-    visibility: 'public',
-    forks: 0,
-    open_issues: 0,
-    watchers: 0,
-    default_branch: 'main',
-    img: 'https://raw.githubusercontent.com/Dmitriy24S/comments-system-backend/main/design-preview/design-preview.png',
+      'Travel Booking App. Created with React, SCSS, react router, react-icons',
+    img: 'https://raw.githubusercontent.com/Dmitriy24S/travel-booking-app/main/design-preview/design-preview.png',
   },
   // {
   //   id: 609641379,
@@ -1804,6 +1684,138 @@ export const allProjects = [
     watchers: 0,
     default_branch: 'main',
     img: 'https://raw.githubusercontent.com/Dmitriy24S/rest-countries-api/main/design/desktop-preview.jpg',
+  },
+  {
+    id: 597432265,
+    node_id: 'R_kgDOI5wXyQ',
+    name: 'comments-system-backend',
+    full_name: 'Dmitriy24S/comments-system-backend',
+    private: false,
+    owner: {
+      login: 'Dmitriy24S',
+      id: 77013378,
+      node_id: 'MDQ6VXNlcjc3MDEzMzc4',
+      avatar_url: 'https://avatars.githubusercontent.com/u/77013378?v=4',
+      gravatar_id: '',
+      url: 'https://api.github.com/users/Dmitriy24S',
+      html_url: 'https://github.com/Dmitriy24S',
+      followers_url: 'https://api.github.com/users/Dmitriy24S/followers',
+      following_url: 'https://api.github.com/users/Dmitriy24S/following{/other_user}',
+      gists_url: 'https://api.github.com/users/Dmitriy24S/gists{/gist_id}',
+      starred_url: 'https://api.github.com/users/Dmitriy24S/starred{/owner}{/repo}',
+      subscriptions_url: 'https://api.github.com/users/Dmitriy24S/subscriptions',
+      organizations_url: 'https://api.github.com/users/Dmitriy24S/orgs',
+      repos_url: 'https://api.github.com/users/Dmitriy24S/repos',
+      events_url: 'https://api.github.com/users/Dmitriy24S/events{/privacy}',
+      received_events_url: 'https://api.github.com/users/Dmitriy24S/received_events',
+      type: 'User',
+      site_admin: false,
+    },
+    html_url: 'https://github.com/Dmitriy24S/comments-system-backend',
+    description:
+      'Comments System - Backend. Created with Fastify, prisma, postgresql, dotenv, nodemon & Railway,',
+    fork: false,
+    url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend',
+    forks_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/forks',
+    keys_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/keys{/key_id}',
+    collaborators_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/collaborators{/collaborator}',
+    teams_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/teams',
+    hooks_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/hooks',
+    issue_events_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/issues/events{/number}',
+    events_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/events',
+    assignees_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/assignees{/user}',
+    branches_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/branches{/branch}',
+    tags_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/tags',
+    blobs_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/git/blobs{/sha}',
+    git_tags_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/git/tags{/sha}',
+    git_refs_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/git/refs{/sha}',
+    trees_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/git/trees{/sha}',
+    statuses_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/statuses/{sha}',
+    languages_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/languages',
+    stargazers_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/stargazers',
+    contributors_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/contributors',
+    subscribers_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/subscribers',
+    subscription_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/subscription',
+    commits_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/commits{/sha}',
+    git_commits_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/git/commits{/sha}',
+    comments_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/comments{/number}',
+    issue_comment_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/issues/comments{/number}',
+    contents_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/contents/{+path}',
+    compare_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/compare/{base}...{head}',
+    merges_url: 'https://api.github.com/repos/Dmitriy24S/comments-system-backend/merges',
+    archive_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/{archive_format}{/ref}',
+    downloads_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/downloads',
+    issues_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/issues{/number}',
+    pulls_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/pulls{/number}',
+    milestones_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/milestones{/number}',
+    notifications_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/notifications{?since,all,participating}',
+    labels_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/labels{/name}',
+    releases_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/releases{/id}',
+    deployments_url:
+      'https://api.github.com/repos/Dmitriy24S/comments-system-backend/deployments',
+    created_at: '2023-02-04T14:35:12Z',
+    updated_at: '2023-04-22T07:41:43Z',
+    pushed_at: '2023-04-24T04:30:59Z',
+    git_url: 'git://github.com/Dmitriy24S/comments-system-backend.git',
+    ssh_url: 'git@github.com:Dmitriy24S/comments-system-backend.git',
+    clone_url: 'https://github.com/Dmitriy24S/comments-system-backend.git',
+    svn_url: 'https://github.com/Dmitriy24S/comments-system-backend',
+    homepage: 'https://comments-system-six.vercel.app',
+    size: 522,
+    stargazers_count: 0,
+    watchers_count: 0,
+    language: 'JavaScript',
+    has_issues: true,
+    has_projects: true,
+    has_downloads: true,
+    has_wiki: true,
+    has_pages: false,
+    has_discussions: false,
+    forks_count: 0,
+    mirror_url: null,
+    archived: false,
+    disabled: false,
+    open_issues_count: 0,
+    license: null,
+    allow_forking: true,
+    is_template: false,
+    web_commit_signoff_required: false,
+    topics: [],
+    visibility: 'public',
+    forks: 0,
+    open_issues: 0,
+    watchers: 0,
+    default_branch: 'main',
+    img: 'https://raw.githubusercontent.com/Dmitriy24S/comments-system-backend/main/design-preview/design-preview.png',
   },
   {
     id: 597430046,
